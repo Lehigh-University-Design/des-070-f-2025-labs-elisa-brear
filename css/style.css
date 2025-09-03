@@ -1,0 +1,65 @@
+:root {
+    --backround-color: rgb(233, 241, 244); 
+    --light-color: #ffb6c1;
+    --dark-color: darkblue; 
+    --link-color: lavender;
+
+    
+}
+
+body {
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{ 
+    color: var(--dark-color);
+    font-size: 2.5em;
+}
+
+main{
+    position:relative;
+    max-width: 1080px;
+    margin: 0 auto;
+
+}
+
+#head {
+    display: flex;
+    justify-content: space-between;
+}
+
+#head h3 a {
+    color: var(--dark-color);
+    text-decoration: none; 
+}
+
+.post {
+    padding: 10px;
+    border: 2px solid var(--dark-color);
+    img{
+        width:100%;
+        height:auto;
+        display: block; 
+
+    }
+}
+
+.post a{
+    color: var(--link-color);
+    background-color: var(--light-color);
+}
+
+.special-headline {
+    font-weight: 900;
+    color: darkorchid; 
+}
+#unique 
+
+#post {
+    backround-color: var(--dark-color);
+    color: var(--light-color);
+    margin-bottom: 1cm;
+    padding: .5cm 1cm; 
+}
