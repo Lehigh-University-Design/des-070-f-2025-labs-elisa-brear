@@ -38,22 +38,127 @@ main{
 .post {
     padding: 10px;
     border: 2px solid var(--dark-color);
+    
     img{
         width:100%;
         height:auto;
         display: block; 
 
     }
+    
+    a{
+        background-color: var(--light-color);
+        padding: 7px;
+        border-radius: 10px; 
+        text-decoration: none;
+    }
 }
 
-.post a{
-    color: var(--link-color);
-    background-color: var(--light-color);
+.hide-me {
+  display: none;
+}
+
+.post span {
+  color: coral;
+}
+
+.block-div, .block {
+  display: block;
+  color: coral;
+  border: 1px solid var(--dark-color);
+  padding: 1em;
+}
+
+.block {
+  margin: 1em 0;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.2em 0.8em;
+  color: var(--dark-color) !important;
+  background-color: coral;
+  transform: rotate(-8deg);
+  font-weight: 800;
+  font-variation-settings:
+    "wdth" 75;
+}
+
+.static {
+  position: static;
+  border: 1px solid var(--dark-color);
+}
+
+.fixed {
+  z-index: 999;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  width: 200px;
+  padding: 1em;
+  background-color: coral;
+  border: 1px solid var(--dark-color);
+}
+
+.relative {
+  position: relative;
+  left: 1em;
+  width: calc(100% - 1em);
+  border: 1px solid var(--dark-color);
+}
+
+.absolute-demo-holder {
+  position: relative;
+  border: 1px solid var(--dark-color);
+  width: 100%;
+  margin-bottom: 1em;
+  aspect-ratio: 4/3;
+}
+
+.absolute-bubble {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background: coral;
+  border-radius: 50px;
+  transform: translate(-50%, -50%); /* This is a shorthand of translateX(-50%) and translateY(-50%) */
+}
+.sticky-demo-holder {
+  overflow: scroll;
+  position: relative;
+  border: 1px solid var(--dark-color);
+  width: 100%;
+  margin-bottom: 1em;
+  height: 200px;
+  p {
+    margin: 1em;
+  }
+}
+
+.sticky-bit {
+  background-color: coral;
+  position: sticky;
+  top: 0;
+  padding: 1em;
+}
+
+.float-demo-holder {
+  border: 1px solid var(--dark-color);
+  padding: 0 1em;
+  margin-bottom: 1em;
 }
 
 .special-headline {
     font-weight: 900;
     color: darkorchid; 
+    
 }
 #unique 
 
@@ -62,4 +167,8 @@ main{
     color: var(--light-color);
     margin-bottom: 1cm;
     padding: .5cm 1cm; 
+}
+
+footer {
+    text-align: center;
 }
