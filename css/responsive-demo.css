@@ -1,0 +1,30 @@
+.grid-boxes {
+    display: grid; 
+    grid-template-columns: ;
+}
+
+.box{
+    aspect-ratio: 1;
+    padding: 2cm;
+    background-color: #333333;
+    color: var(--background-color);
+
+}
+
+.container{
+    max-width: ;
+    margin: 0 auto;
+}
+
+/* media quieres */
+@media only screen and (max-width: 768px){
+
+    .body {
+        font-size: 16px;
+    }
+
+    .grid-boxes {
+        grid-template-columns: 1fr;
+    }
+
+}
